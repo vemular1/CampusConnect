@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CampusConnectAdmin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_emergency_reports">EmergencyReports</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_suggessions">Suggessions</string>
+    <string name="title_activity_student_info">StudentInfo</string>
+
+</resources>

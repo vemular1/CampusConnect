@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background"></include>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Need Help"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="0000000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:layout_below="@+id/textView1"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/emaill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:text="Test@gmail.com"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_below="@+id/contactno"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/ReturnToLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background_storke"
+        android:maxHeight="28dp"
+        android:text="Return To Login"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/emaill"
+        android:onClick="onClick"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/ReturnToLogin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="FAQ1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FAQ1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FAQ1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FAQ1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FAQ1" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

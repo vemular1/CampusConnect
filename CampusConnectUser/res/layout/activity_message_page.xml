@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvRecentContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B5E20"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Message Page"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRecentContacts"
+        android:background="#2E7D32"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="To:Tester"
+        android:textColor="#FFF" />
+
+    <LinearLayout
+        android:id="@+id/llMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvContactName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffF"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#81c784"
+                    android:padding="5dp"
+                    android:text="Message 1"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#C8E6C9"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="Message 2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#81c784"
+                    android:padding="5dp"
+                    android:text="Message 3"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#C8E6C9"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="Message 4" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etSearchContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:hint="Message" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SEND" />
+    </LinearLayout>
+
+</RelativeLayout>

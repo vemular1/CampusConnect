@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_marginTop="80dp">
+
+    <LinearLayout
+        android:id="@+id/linear_one_home_admin"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnStudentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Info"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:drawableTop="@drawable/ic_student_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                
+                android:id="@+id/btnEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:drawableTop="@drawable/ic_events_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two_home_admin"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:drawableTop="@drawable/ic_feedback"
+                android:layout_margin="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btnSuggession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestions"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:drawableTop="@drawable/ic_suggestions"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_three_home_admin"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnEmergencyReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Reports"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:drawableTop="@drawable/ic_emergency"
+                android:layout_margin="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

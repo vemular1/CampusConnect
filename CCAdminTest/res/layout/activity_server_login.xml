@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background"></include>
+
+    
+    <TextView
+        android:id="@+id/tvServerSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server Settings"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/red_color"
+        android:textSize="38sp" />
+    
+    <EditText
+        android:id="@+id/et_ServerIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server IP address"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_background_storke"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textColorHint="@android:color/white"
+        android:layout_above="@+id/etPassword"/>
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background_storke"
+        android:maxHeight="28dp"
+        android:text="Update"
+        android:onClick="onClick"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_ServerIP"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="5">
+        <selector>
+            <item android:state_pressed="false">
+                <layer-list>
+
+                    <!-- BUTTON -->
+                    <item>
+                        <shape>
+                            <solid android:color="@color/button_bg_color" />
+
+                            <corners android:radius="40dp" />
+
+                            <padding
+                                android:bottom="10dp"
+                                android:left="10dp"
+                                android:right="10dp"
+                                android:top="10dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+            <item android:state_pressed="true">
+                <layer-list>
+
+                    <!-- BUTTON -->
+                    <item>
+                        <shape>
+                            <solid android:color="@color/button_bg_dark_color" />
+
+                            <corners android:radius="40dp" />
+
+                            <padding
+                                android:bottom="10dp"
+                                android:left="10dp"
+                                android:right="10dp"
+                                android:top="10dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+        </selector>
+    </item>
+</level-list>

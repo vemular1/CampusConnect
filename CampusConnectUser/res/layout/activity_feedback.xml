@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background" >
+    </include>
+
+    <TextView
+        android:id="@+id/tvFeedbackPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Feedback"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+    <EditText
+        android:id="@+id/etAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etFeedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background_storke"
+        android:gravity="center"
+        android:hint="About"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background_storke"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:hint="Descrtiption"
+        android:padding="16dp"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFeedback"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_storke"
+        android:maxHeight="20dp"
+        android:onClick="onClick"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSend"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

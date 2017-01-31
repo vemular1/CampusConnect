@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background" >
+    </include>
+
+    <TextView
+        android:id="@+id/tvNotificationPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Notifications"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvNotificationPage"
+         >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvNotificationPage"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/button_bg_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="Today Events"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tvTodayEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:text="Today Events"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="@color/button_bg_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="Upcomming Events"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tvUpcomingEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upcomming Events"
+            android:textColor="#FFF" />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

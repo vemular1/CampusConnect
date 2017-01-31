@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/students_background"></include>
+
+    <TextView
+        android:id="@+id/communication_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Communication"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Tester"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/call_message_share_linear_layout"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/call_message_share_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background_storke"
+            android:maxHeight="15dp"
+            android:text="Call"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_calls"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background_storke"
+            android:maxHeight="15dp"
+            android:text="Message"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_message"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@drawable/ic_share"
+            android:background="@drawable/button_background_storke"
+            android:maxHeight="15dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0000000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_mobile"
+        android:layout_below="@+id/call_message_share_linear_layout"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Test@gmail.com"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_email"
+        android:layout_below="@+id/tvPhone"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
